@@ -14,7 +14,7 @@
 *::-webkit-scrollbar-thumb {
   background-color: antiquewhite; /*Will Change later*/
 }
-
+/* Start Sidebar Code */
 nav.sidebar {
   position: fixed;
   left: 0;
@@ -23,22 +23,24 @@ nav.sidebar {
   min-width: 250px;
   min-height: 100vh;
 }
+/* End Sidebar Code */
 
-.rightside {
-  background-color: rgb(40, 115, 226);
-  margin-left: 250px;
-  min-height: 300vh;
-  flex-grow: 1;
-}
-
+/* Start Topbar Code */
 .topbar {
   background-color: rgb(118, 243, 147);
   /* min-width: 100%; */
   min-height: 67px;
 }
+/* End Topbar Code */
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: antiquewhite;
+
+/* 
+-- All the above code will be distrubted between multiple pages
+-------------------------------------------------- 
+*/
+.rightside {
+  background-color: rgb(40, 115, 226);
+  margin-left: 250px;
+  min-height: 300vh;
+  flex-grow: 1;
 }
