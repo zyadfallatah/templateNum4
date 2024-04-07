@@ -24,7 +24,7 @@ section.sidebar {
   min-width: 250px;
   min-height: 100vh;
 
-  padding: .5rem 1.5rem;
+  padding: 1rem 1.5rem;
 
   box-shadow: 0 0 10px #ddd;
 }
@@ -37,7 +37,6 @@ section.sidebar {
 
 .logo-title {
   font-size: 1.25rem;
-  padding: 1rem;
 
   color: var(--default-black);
 }
@@ -46,6 +45,9 @@ section.sidebar {
   position: relative;
   width: 10px;
   height: 10px;
+
+  margin-top: 1rem;
+
   background-color: var(--default-black);
   border-radius: 50%;
 }
@@ -77,7 +79,7 @@ section.sidebar {
 }
 
 .sidebar nav {
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
   font-size: 14px;
 }
 
@@ -93,6 +95,22 @@ section.sidebar {
 .sidebar nav a.active {
   background-color: #f6f6f6;
   border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .logo-title {
+    font-size: 13px;
+  }
+  .line-circle {
+    display: none;
+  }
+  section.sidebar {
+    min-width: fit-content;
+  }
+
+  .sidebar nav a p {
+    display: none;
+  }
 }
 
 /* End Sidebar Code */
@@ -115,4 +133,10 @@ section.sidebar {
   margin-left: 250px;
   min-height: 300vh;
   flex-grow: 1;
+}
+
+@media (max-width: 767px ) {
+  .rightside {
+    margin-left: 90px;
+  }
 }
