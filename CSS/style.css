@@ -106,6 +106,7 @@ section.sidebar {
   }
   section.sidebar {
     min-width: fit-content;
+    padding: 1rem .75rem;
   }
 
   .sidebar nav a p {
@@ -137,6 +138,6 @@ section.sidebar {
 
 @media (max-width: 767px ) {
   .rightside {
-    margin-left: 90px;
+    margin-left: 68px;
   }
 }
