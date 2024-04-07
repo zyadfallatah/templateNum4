@@ -6,6 +6,7 @@
   --red-color: #f44336;
   --grey-color: #888;
   --default-black: black;
+  --default-white: white;
 }
 
 *::-webkit-scrollbar {
@@ -13,7 +14,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: antiquewhite; /*Will Change later*/
+  background-color: var(--blue-color); /*Will Change later*/
 }
 /* Start Sidebar Code */
 section.sidebar {
@@ -118,9 +119,77 @@ section.sidebar {
 
 /* Start Topbar Code */
 .topbar {
-  background-color: rgb(118, 243, 147);
-  /* min-width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-inline: 1rem;
+
+  background-color: var(--default-white);
   min-height: 67px;
+}
+
+.topbar .search {
+  position: relative;
+}
+
+.topbar .search::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+
+  z-index: 999;
+}
+
+.topbar .search-bar {
+  position: relative;
+
+  max-width: 160px;
+  padding: .5rem 1.9rem;
+  border: 1px solid var(--grey-color);
+  border-radius: 6px;
+
+  font-size: 13px;
+
+  transition: max-width 200ms;
+  outline: 0;
+}
+
+.topbar .search-bar:focus {
+  max-width: 200px;
+}
+
+.topbar .personal-info {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+}
+
+.topbar .personal-info i {
+  position: relative;
+}
+
+.topbar .personal-info i::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  background-color: var(--red-color);
+}
+
+.topbar img {
+  width: 30px;
+  border-radius: 50%;
 }
 /* End Topbar Code */
 
