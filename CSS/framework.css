@@ -41,27 +41,18 @@ a {
 } */ 
 /* end medias of containers */
 /* end global rules */
-/* grid layouts */
-.grid-2,
-.grid-3,
-.grid-4,
-.grid-5 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  place-items: center;
+
+/* This Shared upon all elements */
+.content-box {
+  position: relative;
+  background-color: var(--default-white);
+
+  border-radius: 6px;
+  padding-bottom: .5rem;
 }
-.grid-2 {
-  gap: 136px;
+
+@media (min-width: 1200px) {
+  .content-box {
+    min-height: 400px;
+  }
 }
-.grid-3 {
-  gap: 20px;
-}
-.grid-4 {
-  gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-.grid-5 {
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 25px;
-}
-/* end grid layouts */
