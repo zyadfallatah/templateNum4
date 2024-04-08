@@ -207,7 +207,7 @@ section.sidebar {
 }
 
 .content {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .content .title {
@@ -242,4 +242,17 @@ section.sidebar {
   .rightside {
     margin-left: 68px;
   }
+}
+
+.actual-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-top: 2rem;
+
+  gap: 1rem;
+}
+
+.content-box {
+  min-height: 400px;
+  background-color: var(--grey-color);
 }
