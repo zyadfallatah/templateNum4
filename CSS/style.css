@@ -10,7 +10,7 @@
 }
 
 *::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -198,11 +198,44 @@ section.sidebar {
 -- All the above code will be distrubted between multiple pages
 -------------------------------------------------- 
 */
+
 .rightside {
-  background-color: rgb(40, 115, 226);
+  background-color: #f1f5f9;
   margin-left: 230px;
   min-height: 300vh;
   flex-grow: 1;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.content .title {
+  position: relative;
+  font-size: 2rem;
+}
+
+.content .title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 125px;
+  height: 3px;
+
+  background-color: var(--default-white);
+}
+
+.content .title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+
+  width: 50px;
+  height: 3px;
+
+  background-color: var(--default-black);
 }
 
 @media (max-width: 767px ) {
