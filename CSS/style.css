@@ -212,12 +212,12 @@ section.sidebar {
   padding: 1.25rem;
 }
 
-.content .title {
+.content > .title {
   position: relative;
   font-size: 2rem;
 }
 
-.content .title::before {
+.content > .title::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -228,7 +228,7 @@ section.sidebar {
   background-color: var(--default-white);
 }
 
-.content .title::after {
+.content > .title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -347,3 +347,35 @@ section.sidebar {
   border-radius: 5px;
   padding: .35rem .5rem;
 }
+
+/* Start Draft */
+.content-box > .form.draft {
+
+}
+
+.content-box > form.draft > * {
+  width: 100%;
+  display: block;
+  background-color: #eee;
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.content-box > form.draft > .thought {
+  min-height: 160px;
+  margin-top: 1rem;
+}
+
+.content-box > form.draft > input[type="button"] {
+  padding: .3rem;
+  margin-top: 1rem;
+  max-width: 50px;
+
+  text-transform: capitalize;
+  color: var(--default-white);
+  background-color: var(--blue-color);
+
+  margin-left: auto;
+}
+/* End Draft */

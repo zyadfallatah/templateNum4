@@ -3,6 +3,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
+  resize: none;
 }
 
 html {
@@ -42,6 +45,10 @@ a {
 /* end medias of containers */
 /* end global rules */
 
+.norm-pad {
+  padding: .75rem 1rem;
+}
+
 /* This Shared upon all elements */
 .content-box {
   position: relative;
@@ -55,4 +62,18 @@ a {
   .content-box {
     min-height: 400px;
   }
+}
+
+.content-box .content-title {
+  padding: 1.25rem;
+}
+
+.content-box .content-title > h3.title {
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+.content-box .content-title > p.desc {
+  font-size: 14px;
+  color: var(--grey-color);
 }
