@@ -49,6 +49,22 @@ a {
   padding: .75rem 1rem;
 }
 
+.blue-color {
+  --blue-color: hsl(212, 100%, 50%, .5);
+  color: var(--blue-color);
+  background-color: var(--blue-color);
+}
+.orange-color {
+  --orange-color: hsl(38, 92%, 50%, .5);
+  color: var(--orange-color);
+  background-color: var(--orange-color);
+}
+.green-color {
+  --green-color: hsl(142, 71%, 45%, .5);
+  color: var(--green-color);
+  background-color: var(--green-color);
+}
+
 /* This Shared upon all elements */
 .content-box {
   position: relative;
@@ -56,11 +72,13 @@ a {
 
   border-radius: 6px;
   padding-bottom: .5rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 1200px) {
   .content-box {
     min-height: 400px;
+    margin-top: 0;
   }
 }
 
