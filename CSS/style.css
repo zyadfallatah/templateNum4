@@ -472,3 +472,45 @@ section.sidebar {
   border-style: solid;
   border-width: 5px;
 }
+/* End Target */
+
+/* Start Tickets */
+.tickets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 1.5rem;
+  padding-inline: 1.5rem;
+
+  gap: 1rem;
+}
+.tickets > * {
+  width: calc(50% - 1rem);
+  padding: 1rem;
+  text-align: center;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+@media (width <= 768px) {
+  .tickets > * {
+    min-width: 100%;
+  }
+}
+
+.tickets > * > * {
+  padding: .25rem 0;
+}
+
+.tickets h3.tickets-category {
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.tickets p.tickets-stats {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+/* End Tickets */

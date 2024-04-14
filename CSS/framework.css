@@ -49,6 +49,21 @@ a {
   padding: .75rem 1rem;
 }
 
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.c-red {
+  color: var(--red-color);
+}
 .blue-color {
   --blue-color: hsl(212, 100%, 50%, .5);
   color: var(--blue-color);
