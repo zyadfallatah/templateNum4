@@ -257,6 +257,10 @@ section.sidebar {
   }
 }
 
+.profile-box {
+  background-color: var(--default-white);
+  padding-bottom: .25rem;
+}
 
 .profile-box .banner {
   position: relative;
@@ -351,9 +355,6 @@ section.sidebar {
 }
 
 /* Start Draft */
-.content-box > .form.draft {
-
-}
 
 .content-box > form.draft > * {
   width: 100%;
