@@ -260,6 +260,8 @@ section.sidebar {
 .profile-box {
   background-color: var(--default-white);
   padding-bottom: .25rem;
+
+  border-radius: 6px;
 }
 
 .profile-box .banner {
@@ -388,6 +390,8 @@ section.sidebar {
 .target-component {
   display: flex;
   gap: 1rem;
+
+  padding-block: .5rem;
 }
 
 .target-component i.frame-icon {
@@ -482,7 +486,6 @@ section.sidebar {
   flex-wrap: wrap;
 
   margin-bottom: 1.5rem;
-  padding-inline: 1.5rem;
 
   gap: 1rem;
 }
