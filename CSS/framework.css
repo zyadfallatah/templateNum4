@@ -50,14 +50,17 @@ a {
 }
 
 .blue-clr {
+  --blue-color: hsl(212, 100%, 50%);
   color: var(--blue-color);
 }
 
 .green-clr {
+  --green-color: hsl(142, 71%, 45%);
   color: var(--green-color);
 }
 
 .orange-clr {
+  --orange-color: hsl(38, 92%, 50%);
   color: var(--orange-color);
 }
 
