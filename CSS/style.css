@@ -520,3 +520,67 @@ section.sidebar {
   font-size: 1.5rem;
 }
 /* End Tickets */
+
+/* Start News */
+
+.news-title {
+  font-size: 1.5rem;
+}
+
+.news-component {
+  display: flex;
+
+  gap: 1rem;
+
+  border-bottom: 1px solid #eee;
+  padding-block: 1rem;
+}
+
+.news-component:last-child {
+  border-bottom: 0;
+}
+
+
+.news-component img {
+  max-width: 100px;
+  border-radius: 6px;
+}
+
+.news-component .news-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  flex: 1;
+}
+
+.news-component .news-content .news-title {
+  font-size: 16px;
+}
+
+.news-component .news-content .news-desc {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.news-component .news-publish {
+  align-self: center;
+  padding: .25rem .5rem;
+  margin-left: auto;
+  border-radius: 6px;
+
+  font-size: 14px;
+  background-color: #eee;
+}
+
+@media (width <= 767px) {
+  .news-component {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .news-component .news-publish {
+    margin-left: 0;
+  }
+}
+/* End News */
