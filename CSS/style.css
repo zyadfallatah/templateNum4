@@ -617,10 +617,38 @@ section.sidebar {
   font-weight: 500;
 }
 
-.top-search .searched-item > p.count-times {
-  font-size: .9rem;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: .25rem .5rem;
-}
 /* End Top Search Items */
+
+/* Start Uploads */
+
+.upload:not(.upload:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+}
+
+.upload-info {
+  display: flex;
+  flex: 1;
+} 
+
+.upload-info .upload-data {
+  margin-left: 1rem;
+}
+
+.upload-info .upload-data > * {
+  font-size: 1rem;
+}
+
+.upload-info .upload-data > h3 {
+  font-weight: 500;
+}
+
+.upload-info .upload-data > p {
+  color: var(--grey-color);
+}
+
+.upload-image {
+  max-height: 35px;
+}
+/* End Uploads */
