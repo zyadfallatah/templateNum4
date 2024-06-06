@@ -114,3 +114,10 @@ a {
   font-size: 14px;
   color: var(--grey-color);
 }
+
+/* Helper Classes */
+.seperator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

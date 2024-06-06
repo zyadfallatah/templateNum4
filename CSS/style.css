@@ -584,3 +584,20 @@ section.sidebar {
   }
 }
 /* End News */
+
+/* Start Tasks */
+.task {
+  padding-block: .5rem;
+  margin-bottom: .5rem;
+}
+.task:not(.task:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.task-id >  * {
+  font-size: 1rem;
+}
+.task-id > .task-text {
+  color: var(--grey-color);
+  margin-top: .25rem;
+}
+/* End Tasks */
