@@ -601,3 +601,26 @@ section.sidebar {
   margin-top: .25rem;
 }
 /* End Tasks */
+
+/* Start Top Search Items */
+.top-search-title > * {
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+.top-search .searched-item:not(.searched-item:last-child) {
+  margin-block: 1.3rem;
+}
+
+.top-search .searched-item > h3.item-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.top-search .searched-item > p.count-times {
+  font-size: .9rem;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: .25rem .5rem;
+}
+/* End Top Search Items */
