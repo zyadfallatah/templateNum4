@@ -807,3 +807,52 @@ span.progress-state.pending {
   gap: 4px;
 }
 /* End Latest Posts */
+
+/* Start Social Media Stats */
+.media {
+  position: relative;
+  --media-clr: transparent;
+  z-index: 1000;
+
+  margin-bottom: 1.25rem;
+}
+
+.media::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--media-clr);
+  z-index: -1;
+  opacity: .2;
+}
+
+.media .media-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.media .media-status i {
+  width: 60px;
+  height: 60px;
+  padding: .75rem;
+  
+  color: var(--default-white);
+  text-align: center;
+
+  background-color: var(--media-clr);
+  font-size: 2rem;
+}
+
+.media .media-status .stat {
+  color: var(--media-clr);
+}
+
+.media .call-to-action {
+  color: white;
+  background-color: var(--media-clr);
+  margin-right: .75rem;
+}
+/* End Social Media Stats */
