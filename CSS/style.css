@@ -718,3 +718,39 @@ span.progress-state.pending {
   max-width: 150px;
 }
 /* End Project Progress */
+
+/* Start Reminders */
+.reminder {
+  --clr: white;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1.25rem;
+}
+
+.reminder .left-design {
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  background-color: var(--clr);
+  border-radius: 50%;
+
+}
+
+.reminder .reminder-content {
+  padding: .4rem;
+  border-left: 2px solid var(--clr);
+  margin-left: 1rem;
+}
+
+.reminder .reminder-content h3.reminder-title {
+  font-size: 15px;
+  margin-bottom: .5rem;
+}
+.reminder .reminder-content p.date {
+  font-size: 12px;
+  color: var(--grey-color);
+}
+
+/* End Reminders */
