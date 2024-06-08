@@ -754,3 +754,56 @@ span.progress-state.pending {
 }
 
 /* End Reminders */
+
+/* Start Latest Posts */
+.post header.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding-bottom: 1rem;
+
+}
+
+.post header.author img {
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.post header.author .author-name {
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+.post header.author .post-date {
+  font-size: 16px;
+  color: var(--grey-color);
+}
+
+.post q.quote {
+  display: block;
+  border-block: 1px solid #eee;
+
+  font-size: 18px;
+
+  padding-block: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .post q.quote {
+    text-align: center;
+  }
+}
+
+.post footer {
+  margin-top: 1rem;
+}
+
+
+.post footer > * {
+  display: flex;
+  align-items: center;
+  color: var(--grey-color);
+  gap: 4px;
+}
+/* End Latest Posts */
