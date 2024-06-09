@@ -1,14 +1,14 @@
 /* Css for settings.html */
 
 /* Start Site Control */
-.website-control {
+.control-option {
   align-items: center;
 }
-.website-control .content-text h3{
+.control-option .content-text h3{
   font-size:16px;
   font-weight: 500;
 }
-.website-control .content-text p{
+.control-option .content-text p{
   font-size: 14px;
   color: var(--grey-color);
   margin-top: .5rem;
