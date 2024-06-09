@@ -136,12 +136,12 @@ a {
   }
 }
 
-.website-control .toggle-checkbox {
+.control-option .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
 }
 
-.website-control .toggle {
+.control-option .toggle {
   display: block;
   position: relative;
   width: 80px;
@@ -155,7 +155,7 @@ a {
   transition-duration: 300ms;
 }
 
-.website-control .toggle::before {
+.control-option .toggle::before {
   content: "\f00d";
 
   position: absolute;
@@ -179,11 +179,11 @@ a {
   transition-duration: 300ms;
 }
 
-.website-control .toggle-checkbox:checked + .toggle {
+.control-option .toggle-checkbox:checked + .toggle {
   background-color: var(--blue-color);
 }
 
-.website-control .toggle-checkbox:checked + .toggle::before {
+.control-option .toggle-checkbox:checked + .toggle::before {
   content: "\f00c";
   color: var(--blue-color);
   left: 60%;
