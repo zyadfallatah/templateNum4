@@ -206,7 +206,6 @@ section.sidebar {
 .rightside {
   background-color: #f1f5f9;
   margin-left: 230px;
-  min-height: 300vh;
   flex-grow: 1;
 }
 
