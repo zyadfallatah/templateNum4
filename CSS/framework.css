@@ -129,3 +129,23 @@ a {
   border-radius: 6px;
   padding: .25rem .5rem;
 }
+
+.highlight-data.pending {
+  color: var(--default-white);
+  --clr: hsl(38, 92%, 50%)
+}
+
+.highlight-data.in-progress {
+  color: var(--default-white);
+  --clr: hsl(212, 100%, 50%);
+}
+
+.highlight-data.completed {
+  color: var(--default-white);
+  --clr: hsl(142, 71%, 45%);
+}
+
+.highlight-data.rejected {
+  color: var(--default-white);
+  --clr: #f44336;
+}

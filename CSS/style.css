@@ -838,7 +838,7 @@ span.progress-state.pending {
   width: 60px;
   height: 60px;
   padding: .75rem;
-  
+
   color: var(--default-white);
   text-align: center;
 
@@ -856,3 +856,53 @@ span.progress-state.pending {
   margin-right: .75rem;
 }
 /* End Social Media Stats */
+
+/* Start Projects */
+.project-section {
+  margin-top: 1rem;
+  overflow-x: scroll;
+}
+
+.project-section .project-table {
+  font-size: 15px;
+  width: clamp(1000px, 100%, 2000px);
+  border-spacing: 0;
+}
+
+.project-section .project-table .table-headings th {
+  background-color: #eee;
+  padding: 1rem;
+}
+
+.project-section .project-table .table-elements td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.project-section .project-table .table-elements td:last-of-type {
+  border-right: 1px solid #eee;
+}
+
+.project-section .project-table .status {
+  width: fit-content;
+}
+
+.project-section .project-table .team-images {
+  position: relative;
+  min-height: 40px;
+}
+
+.project-section .project-table .team-images > *{
+  --i: 0;
+  position: absolute;
+  top: 0;
+  left: calc(var(--i) * 10%);
+  max-height: 35px;
+
+  border: 2px solid var(--default-white);
+  border-radius: 50%;
+
+  z-index: calc(var(--i) + 1);
+}
+/* End Projects */
