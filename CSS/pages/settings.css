@@ -70,3 +70,27 @@
   padding-bottom: 1.75rem;
 }
 /* End Security */
+
+/* Start Social Info */
+.social-media {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+.social-media > * {
+  background-color: #f6f6f6;
+  padding: .5rem;
+}
+.social-media i {
+  color: var(--grey-color);
+}
+.social-media .social-username {
+
+  width: 100%;
+  font-size: 14px;
+  border-left: 1px solid #ddd; 
+  height: 100%;
+}
+/* End Social Info */
