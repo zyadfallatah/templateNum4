@@ -1,1 +1,29 @@
 /* Css for settings.html */
+
+/* Start Site Control */
+.website-control {
+  align-items: center;
+}
+.website-control .content-text h3{
+  font-size:16px;
+  font-weight: 500;
+}
+.website-control .content-text p{
+  font-size: 14px;
+  color: var(--grey-color);
+  margin-top: .5rem;
+}
+
+.website-close-msg {
+  width: 100%;
+  min-height: 200px;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  border: 1px solid var(--grey-color);
+  border-radius: 6px;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+/* End Site Control */

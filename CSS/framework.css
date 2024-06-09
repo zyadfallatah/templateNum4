@@ -135,3 +135,56 @@ a {
     gap: 1rem;
   }
 }
+
+.website-control .toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.website-control .toggle {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 30px;
+
+  background-color: #ccc;
+  border-radius: 25px;
+  padding-inline: 5px;
+
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.website-control .toggle::before {
+  content: "\f00d";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 23px;
+  height: 23px;
+  
+  color: #aaa;
+  background-color: var(--default-white);
+  border-radius: 50%;
+  
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  transition-duration: 300ms;
+}
+
+.website-control .toggle-checkbox:checked + .toggle {
+  background-color: var(--blue-color);
+}
+
+.website-control .toggle-checkbox:checked + .toggle::before {
+  content: "\f00c";
+  color: var(--blue-color);
+  left: 60%;
+}

@@ -7,7 +7,7 @@
   <!-- Start Development CSS -->
   <link rel="stylesheet" href="../CSS/framework.css">
   <link rel="stylesheet" href="../CSS/normlize.css">
-  <link rel="stylesheet" href="../CSS/pages/">
+  <link rel="stylesheet" href="../CSS/pages/settings.css">
   <link rel="stylesheet" href="../CSS/layout.css">
   <!-- End Development CSS -->
 
@@ -83,12 +83,23 @@
         
       <!-- Start each page code -->
         <div class="grid-3">
-          <div class="content-box"></div>
-          <div class="content-box"></div>
-          <div class="content-box"></div>
-          <div class="content-box"></div>
-          <div class="content-box"></div>
-          <div class="content-box"></div>
+          <div class="content-box">
+            <div class="content-title">
+              <h3 class="title">Site Control</h3>
+              <p class="desc">Control The Website If There is Maintenance</p>
+            </div>
+            <div class="website-control seperator">
+              <div class="content-text">
+                <h3 class="heading">Website Control</h3>
+                <p class="text">Open/Close Website And Type The Reason</p>
+              </div>
+              <label>
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle"></div>
+              </label>
+            </div>
+            <textarea class="website-close-msg" placeholder="Close Message Content"></textarea>
+          </div>
         </div>
       <!-- End each page code -->
     </main>
