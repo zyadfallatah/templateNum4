@@ -188,3 +188,17 @@ a {
   color: var(--blue-color);
   left: 60%;
 }
+
+.button-a,
+.button-a-action {
+  padding: .4rem .5rem;
+  border-radius: 6px;
+}
+.button-a {
+  background-color: #eee;
+  color: var(--default-black);
+}
+.button-a-action {
+  background-color: var(--blue-color);
+  color: var(--default-white);
+}

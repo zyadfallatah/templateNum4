@@ -61,3 +61,12 @@
   font-weight: 500;
 }
 /* End General Info */
+
+/* Start Security */
+.security-option:not(:last-child) {
+  margin-block: 1rem;
+  border-bottom: 1px solid #eee;
+
+  padding-bottom: 1.75rem;
+}
+/* End Security */
