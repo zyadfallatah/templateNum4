@@ -27,3 +27,37 @@
   letter-spacing: 1px;
 }
 /* End Site Control */
+
+/* Start General Info */
+.account-info {
+  margin-bottom: 1.5rem;
+}
+.account-info .title {
+  margin-block: .5rem;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.account-info input[type="text"],
+.account-info input[type="email"] {
+  width: 100%;
+  padding: .5rem;
+  
+  
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  
+  font-size: 14px;
+}
+
+.account-info input[type="email"] {
+  width: 80%;
+}
+
+.account-info .change-email {
+  color: var(--blue-color);
+  font-weight: 500;
+}
+/* End General Info */
