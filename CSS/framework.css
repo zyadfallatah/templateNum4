@@ -21,29 +21,6 @@ a {
   text-decoration: none;
   color: black;
 }
-/* .container {
-  position: relative;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-/* medias of containers */
-/* @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-} */ 
-/* end medias of containers */
-/* end global rules */
 
 .norm-pad {
   padding: .75rem 1rem;
@@ -148,4 +125,13 @@ a {
 .highlight-data.rejected {
   color: var(--default-white);
   --clr: #f44336;
+}
+
+@media (min-width: 767px) {
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-top: 2rem;
+    gap: 1rem;
+  }
 }
