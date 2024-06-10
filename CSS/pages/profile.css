@@ -1,4 +1,6 @@
 /* Style profile.html */
+
+/* Start Profile */
 .profile {
   display: flex;
   margin-top: 2rem;
@@ -119,3 +121,32 @@
     justify-content: center;
   }
 }
+/* End Profile */
+
+/* Start Skills */
+.skills {
+  margin-top: 1rem;
+}
+@media(min-width: 767px) {
+  .skills {
+    max-width: 35%;
+  }
+}
+.skill-list {
+  display: flex;
+  align-items: center;
+
+  gap: .5rem;
+
+  padding-block: 1rem;
+}
+
+@media(max-width: 767px) {
+  .skill-list {
+    justify-content: center;
+  }
+}
+.skill-list:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+/* End Skills */
