@@ -205,6 +205,44 @@
               <p class="widget-title">Top Search Items</p>
             </label>
           </div>
+
+          <div class="content-box">
+            <div class="content-title">
+              <h3 class="title">Backup Manager</h3>
+              <p class="desc">Control Backup Time And Location</p>
+            </div>
+            <div class="backup-manager">
+              <div class="backup">
+                <input type="radio" name="backup-trigger" id="daily">
+                <label for="daily">Daily</label>
+              </div>
+              <div class="backup">
+                <input type="radio" name="backup-trigger" id="weekly" checked>
+                <label for="weekly">weekly</label>
+              </div>
+              <div class="backup">
+                <input type="radio" name="backup-trigger" id="monthly">
+                <label for="monthly">monthly</label>
+              </div>
+            </div>
+            <div class="backup-size">
+              <input type="radio" name="backup-size" id="megaman" checked>
+              <label class="size-option" for="megaman">
+                <i class="fa-solid fa-server"></i>
+                <p class="name">Megaman</p>
+              </label>
+              <input type="radio" name="backup-size" id="zero">
+              <label class="size-option" for="zero">
+                <i class="fa-solid fa-server"></i>
+                <p class="name">Zero</p>
+              </label>
+              <input type="radio" name="backup-size" id="sigma">
+              <label class="size-option" for="sigma">
+                <i class="fa-solid fa-server"></i>
+                <p class="name">Sigma</p>
+              </label>
+            </div>
+          </div>
         </div>
       <!-- End each page code -->
     </main>

@@ -114,3 +114,64 @@
   font-weight: 500;
 }
 /* End Widget Control */
+
+/* Start Backup Manager */
+.backup-manager {
+  border-bottom: 1px solid #eee;
+}
+.backup {
+  text-transform: capitalize;
+  margin-bottom: 1.1rem;
+}
+
+.backup label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.backup input {
+  margin-right: .5rem;
+  transform: scale(1.8);
+}
+
+.backup-size {
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .backup-size {
+    display: block;
+  }
+  .backup-size > * {
+    margin-bottom: 1rem;
+  }
+}
+
+.backup-size input {
+  appearance: none;
+  display: none;
+}
+
+.backup-size .size-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: .75rem;
+
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.backup-size input:checked + .size-option {
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
+}
+/* End Backup Manager */
