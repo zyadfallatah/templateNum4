@@ -1,1 +1,57 @@
 /* Style profile.html */
+.profile {
+
+  margin-top: 2rem;
+  background-color: var(--default-white);
+}
+
+.profile .profile-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 30%;
+  text-transform: capitalize;
+
+  gap: .8rem;
+}
+
+.profile .profile-stats > * {
+}
+
+.profile img {
+  max-width: 100px;
+  border-radius: 50%;
+
+}
+
+.profile .profile-stats span.level-bar {
+  position: relative;
+  width: 60%;
+  height: 5px;
+
+  border-radius: 3px;
+  background-color: #eee;
+}
+
+.profile .profile-stats span.level-bar::before {
+  content: "";
+  position: absolute;
+  background-color: var(--blue-color);
+
+  width: 60%;
+  height: 5px;
+}
+
+.profile .profile-stats .rating {
+  color: var(--orange-color);
+}
+
+.profile .profile-stats .level, 
+.profile .profile-stats .rating-count {
+  color: var(--grey-color);
+}
+
+.profile .profile-stats .rating-count {
+  font-size: 14px;
+}
