@@ -94,3 +94,23 @@
   height: 100%;
 }
 /* End Social Info */
+
+/* Start Widget Control */
+.widget {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+}
+
+.widget .widget-state {
+  transform: scale(1.25);
+  font-size: 4px;
+  padding: 4px;
+}
+.widget .widget-title {
+  font-weight: 500;
+}
+/* End Widget Control */
