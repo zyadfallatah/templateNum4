@@ -136,16 +136,17 @@ a {
   }
 }
 
-.control-option .toggle-checkbox {
+
+.toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
 }
 
-.control-option .toggle {
+.toggle {
   display: block;
   position: relative;
   width: 80px;
-  height: 30px;
+  height: 20px;
 
   background-color: #ccc;
   border-radius: 25px;
@@ -155,7 +156,7 @@ a {
   transition-duration: 300ms;
 }
 
-.control-option .toggle::before {
+.toggle::before {
   content: "\f00d";
 
   position: absolute;
@@ -167,8 +168,8 @@ a {
   justify-content: center;
   align-items: center;
 
-  width: 23px;
-  height: 23px;
+  width: 17px;
+  height: 17px;
   
   color: #aaa;
   background-color: var(--default-white);
@@ -179,14 +180,14 @@ a {
   transition-duration: 300ms;
 }
 
-.control-option .toggle-checkbox:checked + .toggle {
+.toggle-checkbox:checked + .toggle {
   background-color: var(--blue-color);
 }
 
-.control-option .toggle-checkbox:checked + .toggle::before {
+.toggle-checkbox:checked + .toggle::before {
   content: "\f00c";
   color: var(--blue-color);
-  left: 60%;
+  left: 70%;
 }
 
 .button-a,
