@@ -1,1 +1,101 @@
 /* This File To Style friends.html */
+
+.content {
+  min-height: calc(100vh - 67px);
+}
+
+.friend {
+  background-color: var(--default-white);
+  padding: 1rem;
+}
+
+.friend .contact > *{
+  padding: .6rem;
+  margin-right: 1px;
+  color: #666;
+  background-color: #eee;
+
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.friend .friend-profile {
+  text-align: center;
+}
+
+.friend .friend-profile > * {
+  margin-bottom: .5rem;
+}
+
+.friend .friend-image {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.friend .friend-name {
+  font-size: 16px;
+}
+
+.friend .friend-major {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.friend .friend-stats {
+  position: relative;
+  padding-block: 1rem;
+  border-block: 1px solid #eee;
+
+  margin-top: 1rem;
+}
+
+.friend .friend-stats.vip::before {
+  content: "VIP";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  color: var(--orange-color);
+  opacity: .2;
+
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.friend .friend-stats .stat {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.friend .friend-stats .stat:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.friend .friend-stats .stat > * {
+  font-size: 14px;
+}
+
+.friend .seperator {
+  margin-top: 1rem;
+}
+
+.friend .seperator .join-date {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.friend .highlight-data { 
+  color: var(--default-white);
+}
+
+@media(max-width: 400px) {
+  .friend .seperator .join-date {
+    font-size: 10px;
+  }
+  .friend .highlight-data {
+    font-size: 11px;
+  }
+}
