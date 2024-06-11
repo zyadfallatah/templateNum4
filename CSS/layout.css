@@ -211,6 +211,8 @@ section.sidebar {
 .content > .title {
   position: relative;
   font-size: 2rem;
+
+  margin-bottom: 1rem;
 }
 
 .content > .title::before {
