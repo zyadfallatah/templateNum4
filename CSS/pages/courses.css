@@ -1,1 +1,95 @@
 /* This File To Style courses.html */
+
+.course {
+  background-color: var(--default-white);
+  border-radius: 6px;
+}
+
+@media(max-width: 767px) {
+  .course {
+    margin-bottom: 1rem;
+  }
+}
+
+.course .images {
+  position: relative;
+}
+
+.course .images::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 10%;
+
+  background-image: url("../../images/team-01.png");
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+
+  border: 1px solid var(--default-white);
+  border-radius: 50%;
+}
+
+.course .course-image {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.course .course-heading {
+  padding: 1.25rem;
+}
+.course .seperator {
+  padding-inline: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.course .course-title {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.course .course-desc {
+  font-size: 14px;
+  color: var(--grey-color);
+  max-width: 300px;
+}
+
+.course .line {
+  position: relative;
+  margin-top: .5rem;
+}
+
+.course .line::before,
+.course .line::after {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+
+  width: calc(50% - 47px);
+  height: 1px;
+  background-color: #eee;
+  z-index: 0;
+}
+
+.course .line::after {
+  right: 0;
+}
+
+.course .course-info {
+  margin-inline: auto;
+  text-transform: capitalize;
+  color: white;
+}
+
+.course-stats {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.course-stats > *{
+  font-size: 14px;
+  color: var(--grey-color);
+}
