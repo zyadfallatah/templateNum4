@@ -1,1 +1,62 @@
 /* This File is to style files.html */
+.seperator {
+  gap: 1rem;
+}
+
+.seperator .grid-6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  flex: 1;
+}
+
+.seperator .files-stats {
+  width: clamp(250px, 100%, 250px);
+}
+
+/* Start Files */
+.file {
+  position: relative;
+  background-color: var(--default-white);
+  padding: 1rem;
+
+  text-align: center;
+  border-radius: 10px;
+}
+
+.file i {
+  position: absolute;
+  left: 1rem;
+  color: var(--grey-color);
+}
+.file .file-image {
+  max-width: 60px;
+  margin-top: 1rem;
+}
+.file .file-name {
+  font-size: 14px;
+  font-weight: 500;
+
+  margin-block: 1rem;
+}
+.file .user {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+
+  color: var(--grey-color);
+}
+
+.file .file-data {
+  border-top: 1px solid #eee;
+  margin-top: .5rem;
+
+  padding-top: .75rem;
+}
+
+.file .file-data > * {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+/* End Files */
