@@ -4,6 +4,15 @@
   gap: 1rem;
 }
 
+@media(max-width: 767px) {
+  .file-layout {
+    flex-direction: column-reverse;
+  }
+  .file-layout > * {
+    width: 100%;
+  }
+}
+
 .file-layout .grid-6 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -61,11 +70,16 @@
 
 /* Start Files Statistics */
 .file-layout .files-stats {
-  width: clamp(250px, 100%, 250px);
   background-color: var(--default-white);
 
   padding: 1rem;
   border-radius: 10px;
+}
+
+@media(min-width: 767px) {
+  .file-layout .files-stats {
+    min-width: 250px;
+  }
 }
 
 .files-stats .title {
