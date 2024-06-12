@@ -1,18 +1,16 @@
 /* This File is to style files.html */
-.seperator {
+.file-layout {
+  align-items: start;
   gap: 1rem;
 }
 
-.seperator .grid-6 {
+.file-layout .grid-6 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
   flex: 1;
 }
 
-.seperator .files-stats {
-  width: clamp(250px, 100%, 250px);
-}
 
 /* Start Files */
 .file {
@@ -60,3 +58,87 @@
   color: var(--grey-color);
 }
 /* End Files */
+
+/* Start Files Statistics */
+.file-layout .files-stats {
+  width: clamp(250px, 100%, 250px);
+  background-color: var(--default-white);
+
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.files-stats .title {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.files-stats .stat-target {
+  --color: hsl(212, 100%, 50%);
+  padding: .6rem;
+  margin-bottom: 1rem;
+  
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.files-stats .stat-type {
+  display: flex;
+  gap: 8px;
+}
+
+.files-stats .stat-type i {
+  position: relative;
+  padding: .75rem;
+  z-index: 100;
+  color: var(--color);
+}
+
+.files-stats .stat-type i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--color);
+  z-index: 1;
+  opacity: .3;
+}
+
+.files-stats .stat-data > * {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: .4rem;
+}
+
+.files-stats .stat-data .stat-amount {
+  color: var(--grey-color);
+}
+
+.files-stats .total-size {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.files-stats .upload {
+  display: block;
+
+  max-width: fit-content;
+  margin-inline: auto;
+  padding: .6rem .8rem;
+  border-radius: 6px;
+
+  background-color: var(--blue-color);
+  color: var(--default-white);
+
+  font-size: 14px;
+}
+
+.files-stats .upload i {
+  margin-right: .5rem;
+}
+/* End Files Statistics */
