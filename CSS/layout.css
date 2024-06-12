@@ -206,6 +206,7 @@ section.sidebar {
 
 .content {
   padding: 1.25rem;
+  min-height: calc(100vh - 67px);
 }
 
 .content > .title {

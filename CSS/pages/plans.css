@@ -1,1 +1,108 @@
 /* This File to style plans.html */
+
+.plan {
+  --color: var(--blue-color);
+  background-color: var(--default-white);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.plan .plan-tier {
+  padding: 2rem;
+  margin-bottom: 1rem;
+
+  border: 3px solid white;
+  outline: 3px solid var(--color);
+
+  color: var(--default-white);
+  background-color: var(--color);
+  text-align: center;
+}
+
+.plan .plan-tier .plan-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan .plan-tier .plan-price {
+  position: relative;
+  width: fit-content;
+  
+  margin-inline: auto;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.plan .plan-tier .plan-price::before {
+  content: "$";
+  position: absolute;
+  font-size: 24px;
+  left: -20px;
+}
+
+.plan .plan-feature {
+  padding-block: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.plan .plan-feature .feature-desc {
+  position: relative;
+  font-weight: 500;
+}
+
+@media(max-width: 400px) {
+  .plan .plan-feature .feature-desc {
+    font-size: 13px;
+  }
+}
+
+.plan .plan-feature .feature-desc::before,
+.plan .plan-feature.included .feature-desc::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+
+  margin-right: .5rem;
+}
+
+.plan .plan-feature .feature-desc::before {
+  content: "\f00d";
+  color: var(--red-color);
+}
+
+.plan .plan-feature.included .feature-desc::before {
+  content: "\f00c";
+  color: var(--green-color);
+}
+
+.plan .plan-feature > i {
+  color: var(--grey-color);
+}
+
+.plan .current-plan {
+  margin-top: 1rem;
+}
+
+.plan .current-plan a {
+  display: block;
+  max-width: fit-content;
+  padding: .25rem .5rem;
+  border-radius: 6px;
+
+  color: var(--default-white);
+  background-color: var(--color);
+}
+
+.plan .current-plan p.inform-plan {
+  color: var(--grey-color);
+  text-align: center;
+
+  font-weight: 500;
+}
+
+.plan .current-plan.not-rolled p.inform-plan {
+  display: none;
+}
+
+.plan .current-plan.rolled a {
+  display: none;
+}
